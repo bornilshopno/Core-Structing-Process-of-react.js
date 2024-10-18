@@ -1,4 +1,6 @@
 import { useState } from "react"
+import Negative from "./Negative";
+import Positive from "./Positive";
 
 export default function CountDown(){
 
@@ -12,14 +14,25 @@ export default function CountDown(){
         let newCount=count-1;
         setCount(newCount);
     }
+
+   
     
     return(
-       
+       <>
         <div style={{border:"3px solid tomato",margin:"20px", borderRadius:"30px"}}>
             <h3>Click Counter:{count}</h3>
             <button onClick={handleCount} style={{border:"3px solid green",margin:"20px"}}>Adding</button>
             <button onClick={handleCount2}style={{border:"3px solid blue",margin:"20px"}}>Reducing</button>
-
+           
             </div>
+            
+        
+ {count<= -1? <Negative></Negative>:<Positive></Positive>}
+           
+
+ </>
+
     )
 }
+                
+  

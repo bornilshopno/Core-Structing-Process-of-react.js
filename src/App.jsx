@@ -31,7 +31,7 @@ function App() {
       <Properties name='Muad' age={2} profession="I am a Kid Only!"></Properties>
 
       <hr />
-      <h4>4. UseStates()</h4>
+      <h4>4. UseStates() & 7. Conditional Rendering</h4>
       <CountDown></CountDown>
       <hr />
       <h4>5. UseEffect()</h4>

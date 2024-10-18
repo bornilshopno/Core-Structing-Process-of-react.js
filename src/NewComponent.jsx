@@ -4,8 +4,3 @@ export default function Comps(){
     )
 }
 
-function style2(){
-    const style3={ 
-    border:"2px solid tomatto",
-    border:"2px"}
-  }
